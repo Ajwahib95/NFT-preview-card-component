@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'outfit';
+}
+
+body{
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+}
+
+.card{
+  background-color: hsl(216, 50%, 16%);
+  margin: 25px;
+  margin-top: 60px;
+  height: 560px;
+  padding-top: 5px;
+  border-radius: 15px;
+}
+
+.img-div{
+  margin: 22px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NFT{
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.view-icon{
+  position: absolute;
+  visibility: hidden;
+  z-index: 9999;
+  width: 281px;
+  object-fit: scale-down;
+}
+
+h1{
+  color: hsl(0, 0%, 100%);
+  font-weight: 00;
+  font-size: 1.3rem;
+  padding: 22px;
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+
+p{
+  color:hsl(215, 51%, 70%);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 25px;
+  padding-left: 22px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px;
+  padding-top: 15px;
+}
+
+.price, .deadline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  color: hsl(178, 100%, 50%);
+}
+
+.deadline {
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  margin-left: 22px;
+  margin-right: 22px;
+  border: none;
+  background-color: hsl(215, 32%, 27%);
+  height: 0.1px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  margin-left: 20px;
+}
+
+.avatar {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.span-1 {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  padding-right: 5px;
+}
+
+.highlight-text {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+}
+
+.attribution a{
+  color:hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+
+.attribution {
+  color: white;
+  font-weight: 300;
+  padding: 20px;
+  padding-top: 120px;
+  text-align: center;
+}
+/* active states */
+
+@media (hover:hover) {
+  .highlight-text:hover, h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+
+  .img-div:hover{
+    cursor: pointer;
+  }
+
+  .NFT:hover {
+    opacity: 0.5; 
+  }
+
+  .img-div:hover .view-icon {
+    visibility: visible;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    border-radius: 10px;
+  }
+}
+
+/* media queries */
+
+@media (min-width: 380px) {
+  body {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 325px;
+    margin: 0; 
+  }
+  
+  .attribution {
+    width: 325px;
+    padding: 0;
+    padding-top: 120px;
+  }
+}
